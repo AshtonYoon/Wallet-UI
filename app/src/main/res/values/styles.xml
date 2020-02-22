@@ -24,5 +24,9 @@
     <style name="Button">
         <item name="android:layout_width">60dp</item>
         <item name="android:height">70dp</item>
+        <item name="android:background">@drawable/rounded_rectangle</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
     </style>
 </resources>

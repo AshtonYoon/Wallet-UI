@@ -6,4 +6,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="header">#888888</color>
     <color name="colorPrimaryTextColor">#ffffff</color>
+    <color name="transferReceive">#aff4dd</color>
+    <color name="transferSend">#ee98a8</color>
 </resources>
