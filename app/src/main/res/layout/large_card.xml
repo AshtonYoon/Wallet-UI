@@ -5,16 +5,17 @@
     android:layout_height="match_parent">
 
     <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageView"
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:src="@mipmap/card_back_1"
-        android:scaleType="center"
         android:layout_margin="20dp"
+        android:scaleType="center"
+        android:src="@mipmap/card_back_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:riv_corner_radius="@dimen/card_radius"
         app:riv_mutate_background="true"
-        app:riv_tile_mode="repeat"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:riv_tile_mode="repeat" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -28,5 +29,32 @@
         android:textColor="@color/colorPrimaryTextColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="14.3910 LTC"
+        android:textColor="@color/colorPrimaryTextColor"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/roundedImageView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="$915.39"
+        android:textColor="@color/colorPrimaryTextColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:alpha="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
